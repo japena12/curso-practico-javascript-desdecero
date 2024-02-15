@@ -7,4 +7,3 @@ function toggledesktopmenu(){
   
   desktopmenu.classList.toggle("inactive");/* permite intercambiar entre activo y inactivo */
 }
-console.log("funcionando");
