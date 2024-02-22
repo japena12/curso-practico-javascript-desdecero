@@ -12,6 +12,7 @@ const aside = document.querySelector(".product-detail");
 menuemail.addEventListener("click",toggledesktopmenu);/* toggle para intercambiar aparece y desaparece */	
 buhoicon.addEventListener("click",togglemobilemenu); /* toggle para intercambiar aparece y desaparece */
 menucarritoicon.addEventListener("click",toggleaside); /* toggle para intercambiar aparece y desaparece */
+
 function toggledesktopmenu(){
   
   desktopmenu.classList.toggle("inactive");/* permite intercambiar entre activo y inactivo */
@@ -22,6 +23,11 @@ function togglemobilemenu(){
   mobilemenu.classList.toggle("inactive");/* permite intercambiar entre activo y inactivo */
 }
 function toggleaside(){
+  const ismobilemenuclosed = mobilemenu.classList.contains("inactive");
   
+  if (!ismobilemenuclosed){
+    mobilemenu.classList.add("inactive");
+  }
   aside.classList.toggle("inactive");/* permite intercambiar entre activo y inactivo */
+ 
 }
