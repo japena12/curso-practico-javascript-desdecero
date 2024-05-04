@@ -134,4 +134,4 @@ for (product of productlist){
   productcard.appendChild(productinfo);
   
   cardscontainer.appendChild(productcard);
-  }
+  }s
